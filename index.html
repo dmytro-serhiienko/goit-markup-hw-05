@@ -609,7 +609,7 @@
         <!-- * Name -->
         <form class="modal-form">
           <div class="modal-form-box">
-            <label class="modal-label" for="user-name">Name</label>
+            <label class="modal-field modal-label" for="user-name">Name</label>
             <div class="modal-icon-box">
               <input
                 class="modal-input"
@@ -629,7 +629,7 @@
 
           <!-- * Phone -->
           <div class="modal-form-box">
-            <label class="modal-label">Phone</label>
+            <label class="modal-field modal-label">Phone</label>
             <div class="modal-icon-box">
               <input
                 class="modal-input"
@@ -649,7 +649,7 @@
 
           <!-- * Email -->
           <div class="modal-form-box">
-            <label class="modal-label">Email</label>
+            <label class="modal-field modal-label">Email</label>
             <div class="modal-icon-box">
               <input
                 class="modal-input"
@@ -670,7 +670,9 @@
 
           <!-- * Comment -->
           <div class="modal-comment-box">
-            <label class="modal-textarea" for="user-comment">Comment </label>
+            <label class="modal-field modal-textarea" for="user-comment"
+              >Comment
+            </label>
             <textarea
               class="modal-text"
               id="user-comment"
@@ -689,7 +691,8 @@
               name="user-privacy"
             />
             <label class="modal-lable-check" for="user-privacy"
-              >I accept the terms and conditions of the
+              >I accept the terms and conditions of the <a class="check-link">Privacy Policy</a></label
+            >
               <span class="label-span-check">
                 <svg class="checkbox-svg" width="10" height="8">
                   <use
@@ -699,19 +702,6 @@
                 </svg>
               </span>
             </label>
-
-            _______
-            <span class="checkbox-span">
-              <svg class="checkbox-svg" width="10" height="8">
-                <use
-                  class="checkbox-use"
-                  href="./images/icons.svg#icon-checkbox"
-                ></use>
-              </svg>
-            </span>
-            <label class="modal-box-check" for="user-privacy"
-              ><a class="check-link">Privacy Policy</a></label
-            >
           </div>
 
           <!-- * Button -->

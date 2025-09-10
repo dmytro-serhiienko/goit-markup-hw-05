@@ -719,8 +719,7 @@ footer {
 }
 
 /* +стилі */
-.modal-textarea,
-.modal-label {
+.modal-field {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
@@ -758,11 +757,9 @@ footer {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* .modal-icon-box:hover .modal-icon,
-.modal-icon-box:focus .modal-icon,
-.modal-icon-box:active .modal-icon {
+.modal-icon-box:focus .modal-icon {
   fill: #4d5ae5;
-} */
+}
 
 /* *TEXTAREA */
 .modal-comment-box {
@@ -851,6 +848,8 @@ input:checked {
   border-radius: 4px;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  margin: 0 auto;
 }
 
 /* ! */
