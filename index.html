@@ -601,37 +601,64 @@
           </svg>
         </button>
         <p class="modal-title">Leave your contacts and we will call you back</p>
-        <label class="modal-label"
-          >Name
+        <!-- * Name -->
+        <label class="modal-label">Name</label>
+        <div class="modal-icon-box">
+          <svg class="modal-icon" width="18" height="18">
+            <use
+              class="modal-icon-person"
+              href="./images/icons.svg#icon-person"
+            ></use>
+          </svg>
           <input
             class="modal-input"
             type="text"
             name="username"
             placeholder=""
           />
-        </label>
-        <label class="modal-label"
-          >Phone
+        </div>
+
+        <!-- * Phone -->
+        <label class="modal-label">Phone</label>
+        <div class="modal-icon-box">
+          <svg class="modal-icon" width="18" height="24">
+            <use
+              class="modal-icon-svg"
+              href="./images/icons.svg#icon-phone"
+            ></use>
+          </svg>
           <input class="modal-input" type="tel" name="phone" />
-        </label>
-        <label class="modal-label"
-          >Email
+        </div>
+
+        <!-- * Email -->
+        <label class="modal-label">Email</label>
+        <div class="modal-icon-box">
+          <svg class="modal-icon" width="18" height="24">
+            <use
+              class="modal-icon-svg"
+              href="./images/icons.svg#icon-email"
+            ></use>
+          </svg>
           <input class="modal-input" type="email" name="email" />
-        </label>
-        <label class="modal-label"
+        </div>
+
+        <!-- * Comment -->
+        <label class="modal-textarea"
           >Comment
-          <input
-            class="modal-input modal-text"
-            type="text"
+          <textarea
+            class="modal-text"
             name="comment"
             placeholder="Text input"
-          />
+          ></textarea>
         </label>
+
+        <!-- * Checkbox -->
         <label class="modal-box-check">
           <input class="modal-check" type="checkbox" name="check" />I accept the
           terms and conditions of the <span>Privacy Policy</span>
         </label>
 
+        <!-- * Button -->
         <button class="modal-btn" type="submit">Send</button>
       </form>
     </div>

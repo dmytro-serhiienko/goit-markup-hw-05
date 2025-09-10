@@ -607,9 +607,7 @@ footer {
 
 /* !MODAL */
 .modal-box {
-  background-color: #2e2f42;
-  /* opacity: 40%; */
-
+  background-color: rgba(46, 47, 66, 0.4);
   position: fixed;
   top: 0;
   left: 0;
@@ -621,21 +619,30 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  /* opacity: 0; */
+  /* pointer-events: none;
+
+  transition: opacity 250ms ease; */
+}
+
+.modal-box.is-open {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .modal-form {
+  display: flex;
+  flex-direction: column;
+
   border-radius: 4px;
-  width: 408px;
-  height: 584px;
+  max-width: 408px;
+  max-height: 584px;
 
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
-  background: #fcfcfc;
-  padding: 36px 24px 12px 24px;
-
-  display: flex;
-  flex-direction: column;
-  /* align-items: center; */
+  background-color: #fcfcfc;
+  padding: 24px 24px 12px 24px;
 }
 
 .modal-title {
@@ -655,6 +662,8 @@ footer {
   line-height: 1.16;
   letter-spacing: 0.04em;
   color: #8e8f99;
+  margin-bottom: 4px;
+  margin-top: 8px;
 }
 
 .modal-input {
@@ -662,26 +671,53 @@ footer {
   border-radius: 4px;
   width: 360px;
   height: 40px;
-  margin-bottom: 8px;
+}
+
+.modal-input:hover,
+.modal-input:focus,
+.modal-input:active {
+  border: 1px solid #4d5ae5;
+}
+
+/* *TEXTAREA */
+.modal-textarea {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+  margin-top: 8px;
 }
 
 .modal-text {
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
   width: 360px;
   height: 120px;
+  padding-top: 8px;
+  padding-left: 16px;
+  margin-top: 4px;
 }
 
-.modal-check {
-  width: 16px;
-  height: 16px;
-  margin-right: 8px;
+.modal-text:hover,
+.modal-text:focus,
+.modal-text:active {
+  border: 1px solid #4d5ae5;
 }
 
-.modal-input::placeholder {
+.modal-text::placeholder {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
+}
+/* * */
+
+.modal-check {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
 }
 
 .modal-box-check {
@@ -744,4 +780,19 @@ footer {
 .modal-btn-close-use {
   fill: #2e2f42;
 }
+
+.modal-icon-box {
+  position: relative;
+  width: 360px;
+  height: 40px;
+}
+
+.modal-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  fill: #2e2f42;
+}
+
 /* ! */
