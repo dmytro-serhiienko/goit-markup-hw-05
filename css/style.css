@@ -689,7 +689,6 @@ footer {
 .modal-btn-close:focus,
 .modal-btn-close:active {
   background-color: #404bbf;
-  border: none;
   fill: #ffffff;
 }
 
@@ -711,7 +710,7 @@ footer {
 .modal-form-box {
   margin-bottom: 8px;
   width: 360px;
-  height: 40px;
+  /* height: 40px; */
 }
 
 .modal-icon-box {
@@ -789,6 +788,13 @@ footer {
   border-color: #4d5ae5;
 }
 
+/* checked */
+.modal-visual:checked + .modal-lable-check .span-modal {
+  background-color: #404bbf;
+  border: none;
+  fill: #f4f4fd;
+}
+
 /* * */
 .modal-box-check {
   font-size: 12px;
@@ -797,18 +803,13 @@ footer {
   color: #8e8f99;
 }
 
-input:checked {
-  background-color: #404bbf;
-  border: none;
-  fill: #f4f4fd;
-}
-
 .modal-checkbox-container {
   margin-bottom: 24px;
 }
 
 .check-link {
   color: #4d5ae5;
+  text-decoration: underline;
 }
 
 .modal-btn {
@@ -835,6 +836,7 @@ input:checked {
 .span-modal {
   height: 16px;
   width: 16px;
+  margin-right: 8px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
