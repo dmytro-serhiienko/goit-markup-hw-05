@@ -479,6 +479,7 @@ footer {
 .footer-social-container {
   display: flex;
   flex-direction: column;
+  margin-right: 80px;
 }
 
 .footer-social-title {
@@ -527,7 +528,6 @@ footer {
 
 /* Footer Form */
 .footer-subscribe-box {
-  display: flex;
   gap: 16px;
 }
 
@@ -542,7 +542,6 @@ footer {
 
 .footer-subscribe-form {
   display: flex;
-  flex-direction: column;
   gap: 24px;
 }
 
